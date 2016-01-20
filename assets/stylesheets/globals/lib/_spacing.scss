@@ -1,0 +1,68 @@
+// Sexy mixin for margin/padding
+@mixin spacing-with-modifiers($spcing: $spacing, $type: "margin", $pre: "mar") {
+  #{$type}: $spcing;
+  &.#{$pre}-top {
+    #{$type}: $spcing 0 0 0;
+  }
+  &.#{$pre}-right {
+    #{$type}: 0 $spcing 0 0;
+  }
+  &.#{$pre}-bottom {
+    #{$type}: 0 0 $spcing 0;
+  }
+  &.#{$pre}-left {
+    #{$type}: 0 0 0 $spcing;
+  }
+  &.#{$pre}-sides {
+    #{$type}: 0 $spcing;
+  }
+  &.#{$pre}-top-and-bottom, &.#{$pre}-vertical {
+    #{$type}: $spcing 0;
+  }
+}
+
+// Margin
+.mw-margin {
+  @include spacing-with-modifiers($spacing);
+  &.mar-half {
+    @include spacing-with-modifiers($spacing / 2);
+  }
+  &.mar-double {
+    @include spacing-with-modifiers($spacing * 2);
+  }
+  &.mar-quadruple {
+    @include spacing-with-modifiers($spacing * 4);
+  }
+}
+
+// Padding
+.mw-padding {
+  @include spacing-with-modifiers($spacing, "padding", "pad");
+  &.pad-half {
+    @include spacing-with-modifiers($spacing / 2, "padding", "pad");
+  }
+  &.pad-double {
+    @include spacing-with-modifiers($spacing * 2, "padding", "pad");
+  }
+   &.pad-quadruple {
+    @include spacing-with-modifiers($spacing * 4, "padding", "pad");
+  }
+}
+
+.mw-no-padding {
+  padding: 0px !important;
+}
+
+.mw-no-margin {
+  margin: 0px!important;
+}
+
+.mw-centralize{
+  margin: 0 auto!important;
+  display:block;
+}
+
+.mw-neg-margin-sides {
+  margin-left: -$margin;
+  margin-right: -$margin;
+}

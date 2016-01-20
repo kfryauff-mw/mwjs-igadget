@@ -1,0 +1,17 @@
+.rvmrc
+tmp/
+log/
+npm-debug.log
+*.swp
+.sass-cache
+.DS_Store
+moovworkerd.pid
+node_modules
+
+/assets/javascript/.remote/
+/assets/javascript/main.js
+/assets/javascript/host_map.js
+/assets/stylesheets/.css/*
+/assets/images/sprites.png
+/assets/stylesheets/globals/_sprites.scss
+/scripts/moov_main.js

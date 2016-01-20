@@ -1,0 +1,74 @@
+// VARIABLES
+// -----------------------------
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+// ~*~*~ USE NAMED COLORS ie. $text_black ~*~~*~*~*
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+// Global values for color schemes and basic styles
+// for Moovweb project
+
+// Color Scheme
+// ------------
+
+$select_background_blue:  black;
+$select_carrot_blue:      black;
+
+// White
+$white:                   #FFFFFF;
+
+// Black
+$black:                   #000000;
+
+// Grays
+$gray_label:              #919191;
+$gray_medium:             #999999; // gray button
+$gray_input:              #d4d4d4; // input border, gray button border
+$gray_background:         #f0f0f0; // footer background, box background
+
+// Red
+$red_error:               #F00;
+
+
+$error:                   $red_error;
+$body_background_color:   $white;
+$text_black:              $black;
+$link_color:              blue;
+
+// Typography
+// ----------
+$font_family:             sans-serif;
+$base_font_size:          13px;
+$line_height:             24px;
+$text_font:               $base_font_size;
+
+// Header Sizes
+// ------------
+$h1_size:                 $base_font_size + 9px;
+$h2_size:                 $base_font_size + 6px;
+$h3_size:                 $base_font_size + 3px;
+
+// Borders
+// -------
+$border_color:            $gray_input;
+$border:                  1px solid $border_color;
+
+// Gradients
+// ---------
+// TODO
+
+// Component Sizing
+// ----------------
+$padding:                 10px;
+$margin:                  10px;
+$border_radius:           5px;
+$btn_width:               100px;
+$spacing:                 10px;
+
+// Text Shadows
+// ------------
+$text_shadow_white:       0 1px $white;
+
+// Box Shadows
+// -----------
+// TODO

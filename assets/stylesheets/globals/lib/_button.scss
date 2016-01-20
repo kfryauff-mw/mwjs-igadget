@@ -1,0 +1,16 @@
+//mixin for buttons
+@mixin button-base {
+  vertical-align: middle;
+  display: inline-block;
+  border-radius: $border_radius;
+  margin: $spacing 0;
+  padding: $padding $padding/2;
+  text-transform: uppercase;
+  font-size: $base_font_size;
+  border: none;
+  -webkit-appearance:none;
+  a{
+    text-decoration: none;
+  }
+}
+

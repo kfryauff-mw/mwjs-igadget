@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+'use strict'
+var gulp = require("../gulpfile.js");
+
+var exec = require('child_process').exec
+function puts(error, stdout, stderr) { console.log(stdout); /* if (error) { throw new Error(error) } */ }
+exec("moov fusion", puts);
+
+if(gulp.tasks){
+  gulp.start();
+};

@@ -1,0 +1,130 @@
+
+// Flex Box
+// -----------------------------
+
+/*
+  - flex-box: add this class to get flex box properties
+  - flex-box-item: add to the number of items that are in the container
+*/
+.mw-flex-box {
+  @include display-box;
+  @include box-orient(horizontal);
+  @include box-align(stretch);
+  .mw-flex-box-item-1 {
+    display: block;
+    @include box-flex(1);
+  }
+  .mw-flex-box-item-2 {
+    display: block;
+    @include box-flex(2);
+  }
+  .mw-flex-box-item-3 {
+    display: block;
+    @include box-flex(3);
+  }
+  .mw-flex-box-item-4 {
+    display: block;
+    @include box-flex(4);
+  }
+  .mw-flex-box-item-5 {
+    display: block;
+    @include box-flex(5);
+  }
+}
+//flex wrap
+.mw-flex-wrap {
+   @include display-box-new;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+
+}
+//Box mixins
+@mixin box-base($bcolor:white, $border_color:none) {
+  margin: $spacing;
+  background-color: $bcolor;
+  padding: $padding;
+  border: $border_color;
+}
+
+@mixin toggler-bar($bcolor, $tcolor) {
+  background: $bcolor;
+  padding: $padding 30px $padding $padding;
+  color:$tcolor;
+  position:relative;
+  /* accordion closed */
+  &:after {
+    background-color: transparent;
+    border-left-style: solid;
+    border-left-width: 2px;
+    content: "";
+    height: 15px;
+    margin-top: -6px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    width: 0px;
+  }
+  &:before {
+    background-color: transparent;
+    border-top-style: solid;
+    border-top-width: 2px;
+    content: "";
+    height: 0px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 15px;
+  }
+  &[data-ur-state='enabled'] {
+    &:after {
+      display: none;
+    }
+  }
+}
+@mixin mw-carrot($color, $rotation:-90deg) {
+  display: inline-block;
+  border-left: 1px solid $color;
+  border-bottom: 1px solid $color;
+  height: 8px;
+  width: 8px;
+  -webkit-transform: rotate($rotation);
+  transform: rotate($rotation);
+}
+
+@mixin mw-toggler-box ($border_color, $back_color, $text_color){
+  [data-ur-toggler-component="button"] {
+    @include toggler-bar($back_color, $text_color);
+    border: 1px solid $border_color;
+    border-radius: $border_radius $border_radius 0 0;
+    text-transform: uppercase;
+    &[data-ur-state='disabled'] {
+      border-radius: $border_radius;
+    }
+  }
+  [data-ur-toggler-component="content"] {
+    margin-top: none;
+    border-left:   1px solid $border_color;
+    border-right:  1px solid $border_color;
+    border-bottom: 1px solid $border_color;
+    border-radius: 0 0 $border_radius $border_radius;
+    padding: $padding $padding 0 $padding;
+  }
+}
+@mixin link-bar($text_color:black,$b_color:white, $border_color:none) {
+  @include box-base();
+  color: $text_color;
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 12px 30px 12px 10px;
+  text-align: left;
+  &:after {
+    @include mw-carrot($text_color, 225deg);
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(225deg);
+    transform: translateY(-50%) rotate(225deg);
+  }
+}

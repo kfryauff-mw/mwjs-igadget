@@ -1,0 +1,20 @@
+
+---
+- :output_file: head.js
+  :input_directories:
+    - head
+  :input_files:
+  - vendor/jquery.DOMNodeAppear.js
+  - http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js
+  - host_map.js
+  - http://downloads.moovweb.com/plutonium/0.1.95/passthrough_ajax.js
+- :output_file: body.js
+  :input_directories:
+    - body
+  :input_files:
+  - mw.Igadget-js.js
+  - http://downloads.moovweb.com/uranium/1.0.176/uranium-pretty.js
+- :output_file: main.js
+  :input_directories:
+    - main
+  :input_files:

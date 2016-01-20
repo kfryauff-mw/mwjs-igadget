@@ -1,0 +1,67 @@
+// Forms
+// -----------------------------
+
+/*
+  - form: basic form styling
+*/
+@mixin custom-checkboxes($background-color: white, $checkmark-color: black){
+  @include appearance(none);
+  background-color: $background-color;
+  border-radius: 3px;
+  height: 15px;
+  outline: none;
+  position: relative;
+  width: 15px;
+  vertical-align: bottom;
+  &:checked::after {
+    border: 0 solid $checkmark-color;
+    border-width: 0 3px 3px 0;
+    content: "";
+    display: block;
+    height: 8px;
+    left: 4px;
+    position: absolute;
+    top: 0;
+    @include transform(rotate(40deg));
+    width: 4px;
+  }
+}
+select {
+  padding: $spacing $spacing*2 $spacing $spacing;
+  border-radius: $border-radius;
+  background: $white;
+  border: $border;
+  margin-bottom: $spacing;
+  width: 100%;
+  height: 37px;
+  &.mw-inline-select {
+    display:inline-block;
+    width:initial;
+    min-width:50px;
+  }
+}
+
+input[type="text"], input[type="tel"], input[type="number"], input[type="password"], input[type="email"], input[type="search"], .mw-input,input[type="date"], textarea {
+  display: block;
+  font-family: $text_font;
+  padding: $padding;
+  border: $border;
+  width: 100%;
+  font-size: $base_font_size;
+  font-weight: bold;
+  border-radius: $border-radius;
+  @include appearance(none);
+  background-color: $white;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  &.mw-error {
+    border: 1px solid $error;
+  }
+}
+
+.mw-field-label {
+  display: block;
+  color:  lightgray;
+  margin: $margin 0 $margin/2 0;
+}
