@@ -3,3 +3,21 @@
 @import "lib/boxes";
 @import "lib/button";
 @import "lib/forms";
+
+// For Testing Purposes Only
+.temp {
+  border: 3px solid red;
+  background-color: blue;
+}
+
+.high_fonts {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.header_bg {
+  @include linear-gradient(#C14102 0, shade(#C14102, 20%) 100%);
+}
+
+.search_bg {
+  @include linear-gradient(#852201 0, shade(#C14102, 50%) 100%);
+}

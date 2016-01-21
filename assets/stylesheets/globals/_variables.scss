@@ -1,6 +1,3 @@
-// VARIABLES
-// -----------------------------
-
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 // ~*~*~ USE NAMED COLORS ie. $text_black ~*~~*~*~*
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
@@ -10,6 +7,9 @@
 
 // Color Scheme
 // ------------
+
+$color1: #B03B01;
+$color2: #075899;
 
 $select_background_blue:  black;
 $select_carrot_blue:      black;
@@ -25,10 +25,16 @@ $gray_label:              #919191;
 $gray_medium:             #999999; // gray button
 $gray_input:              #d4d4d4; // input border, gray button border
 $gray_background:         #f0f0f0; // footer background, box background
+$gray_light:              rgb(236, 236, 236);
+$gray_light_item:         rgb(239, 241, 245);
+$gray_med_item:           rgb(208, 208, 208);
 
 // Red
 $red_error:               #F00;
 
+// colors
+$header-background: #B03B01;
+$anchor-color: #075899;
 
 $error:                   $red_error;
 $body_background_color:   $white;
@@ -47,6 +53,9 @@ $text_font:               $base_font_size;
 $h1_size:                 $base_font_size + 9px;
 $h2_size:                 $base_font_size + 6px;
 $h3_size:                 $base_font_size + 3px;
+
+$header_bg: #C14102 0, shade(#C14102, 20%) 100%;
+$search_bg: #852201 0, shade(#C14102, 50%) 100%;
 
 // Borders
 // -------
@@ -72,3 +81,7 @@ $text_shadow_white:       0 1px $white;
 // Box Shadows
 // -----------
 // TODO
+
+// Toggle Menu Colors
+$mat_deep_red: rgb(105, 29, 0);
+$mat_yellow: rgb(243, 239, 216);

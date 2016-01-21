@@ -66,3 +66,81 @@ input[type="number"]::-webkit-outer-spin-button {
   display: none;
 }
 
+// Custom Global Classes
+#Wrapper {
+  padding: 0 10px;
+
+  .ProductActionAdd {
+    padding: 10px 0;
+    font-weight: normal;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    a {
+      @include button_base;
+      width: auto;
+      display: block;
+
+    }
+  }
+}
+
+// Hacky fix for QuickViewBtn
+.QuickViewBtn, #fancy_outer, #fancy_overlay, #fancy_loading, #fancy_title {
+  display:none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+// For Testing Purposes Only
+.temp {
+  border: 2px red solid !important;
+}
+
+
+// For Modal Response:
+
+#ModalOverlay {
+  background-color: rgba(15, 15, 15, 0.5);
+} // End #ModalOverlay
+
+#ModalContainer {
+  background-color: white;
+  border-radius: 5px;
+  top: 10px !important;
+  margin-left: 5% !important;
+  width: 90% !important;
+  padding: 10px;
+  text-align: center;
+
+  .fastCartTop {
+    .actionLink {
+      color: transparent;
+      margin-top: 20px;
+      a {
+        @include button_base;
+        display: block;
+        margin: 0;
+      }
+    } // End .actionLink
+  } // End .fastCartTop
+
+  .fastCartBottom {
+    display: none;
+  } // End .fastCartBottom
+
+  a.modalClose {
+    @include button_base;
+    display: block;
+    width: 100% !important;
+    text-align: center !important;
+  } // End a.modalClose
+} // End Modal Container
+
+[data-ur-toggler-component="content"] {
+  display: none;
+  &[data-ur-state="enabled"] {
+    display: block;
+  }
+}

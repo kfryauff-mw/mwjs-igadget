@@ -1,6 +1,10 @@
 var mappings = [
     [/^\/$|^\/\?/,
-        "/pages/home.js"]
+      "/pages/home.js"],
+    [/shop/,
+      "/pages/category.js"],
+    [/sample-product/,
+      "/pages/product.js"]
 ];
 
 module.exports = function() {

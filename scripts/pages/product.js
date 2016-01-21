@@ -1,3 +1,3 @@
 module.exports = function() {
-  $this.addClass("_category");
+  $this.addClass("_product");
 };

@@ -1,3 +1,117 @@
-header.mw-header {
-  
-}
+#Header {
+  border-top: 1px solid black;
+  @extend .header_bg;
+  #Logo {
+    @extend .header_bg;
+    padding-bottom: 10px;
+    h1 {
+      margin: 0;
+      padding: 15px 10px 10px;
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      font-weight: normal;
+      a {
+        font-size: 22px;
+        text-shadow: 0 -1px rgba(0,0,0,0.9);
+        color: white;
+      }
+    }
+
+    #LogoContainer {
+      width: 65%;
+      display: inline-block;
+    } // End of #LogoContainer
+
+    #TopMenu {
+      text-align: center;
+      width: 30%;
+      min-width: 97px;
+      float: right;
+      margin: 0;
+      padding: 0;
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 0;
+          padding: 0;
+          float: left;
+          padding: 0 2px 2px;
+          a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+          }
+        }
+      }
+    } // End of #TopMenu
+  } // End of #Logo
+
+  .mw_header_bottom {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: 1px solid rgb(95, 24, 0);
+    @extend .search_bg;
+    .mw_search {
+      display: inline-block;
+      width: 75%;
+      position: relative;
+      input[type='text']{
+        border: 1px solid black;
+        background-color: #f1f0f0;
+        font-size: 13px;
+        padding: 4px;
+        height: 33px;
+        margin: 0;
+        width: 100%;
+        display: block;
+      }
+      .mw_search_btn {
+        height: 33px;
+        position: absolute;
+        top: 0;
+        right: -13px;
+        input {
+          height: 33px;
+          width: 40px;
+        }
+      }
+    } // End of .mw_search
+    .mw_menu_btn {
+      float: right;
+      display: block;
+      &[data-ur-state="enabled"] span {
+        @extend .sprites-menu-on;
+      }
+    }
+  } // End of .mw_header_bottom
+
+  #Menu {
+    #SideCategoryList {
+      border-top: 1px solid $mat_deep_red;
+      h2 {
+        color: white;
+        @extend .search_bg;
+        font-weight: normal;
+        font-size: 18px;
+        margin: 0;
+        padding: 15px;
+      }
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        border-top: 1px solid $mat_deep_red;
+        a {
+            color: white;
+            padding: 10px 20px;
+            width: auto;
+            display: block;
+        }
+      }
+    }
+  }
+} // End of #Header
