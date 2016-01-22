@@ -478,7 +478,7 @@ table {
   width: 9px;
   height: 13px; }
 
-.sprites-minus {
+.sprites-minus, body._category #Wrapper .Left #SideShopByBrand h2[data-ur-state="enabled"] > .mw_indicator, body._category #Wrapper .Left #SideCategoryShopByPrice h2[data-ur-state="enabled"] > .mw_indicator {
   background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -720px;
   width: 13px;
   height: 13px; }
@@ -493,7 +493,7 @@ table {
   width: 15px;
   height: 15px; }
 
-.sprites-plus {
+.sprites-plus, body._category #Wrapper .Left #SideShopByBrand h2 > .mw_indicator, body._category #Wrapper .Left #SideCategoryShopByPrice h2 > .mw_indicator {
   background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -762px;
   width: 13px;
   height: 13px; }
@@ -741,7 +741,7 @@ input[type="text"], input[type="tel"], input[type="number"], input[type="passwor
   margin: 10px 0 5px 0; }
 
 .temp {
-  border: 3px solid red;
+  border: 3px solid red !important;
   background-color: blue; }
 
 .high_fonts {
@@ -823,27 +823,20 @@ input[type="number"]::-webkit-outer-spin-button {
     text-align: center;
     font-size: 12px; }
     #Wrapper .ProductActionAdd a {
-      vertical-align: middle;
-      display: inline-block;
+      background-color: #691d00;
       border-radius: 5px;
+      padding: 10px;
       margin: 10px 0;
-      padding: 10px 5px;
-      text-transform: uppercase;
-      font-size: 13px;
-      border: none;
-      -webkit-appearance: none;
+      font-size: 14px;
+      color: white;
+      width: 100%;
       width: auto;
       display: block; }
-      #Wrapper .ProductActionAdd a a {
-        text-decoration: none; }
 
 .QuickViewBtn, #fancy_outer, #fancy_overlay, #fancy_loading, #fancy_title {
   display: none;
   opacity: 0;
   pointer-events: none; }
-
-.temp {
-  border: 2px red solid !important; }
 
 #ModalOverlay {
   background-color: rgba(15, 15, 15, 0.5); }
@@ -860,36 +853,28 @@ input[type="number"]::-webkit-outer-spin-button {
     color: transparent;
     margin-top: 20px; }
     #ModalContainer .fastCartTop .actionLink a {
-      vertical-align: middle;
-      display: inline-block;
+      background-color: #691d00;
       border-radius: 5px;
+      padding: 10px;
       margin: 10px 0;
-      padding: 10px 5px;
-      text-transform: uppercase;
-      font-size: 13px;
-      border: none;
-      -webkit-appearance: none;
+      font-size: 14px;
+      color: white;
+      width: 100%;
       display: block;
       margin: 0; }
-      #ModalContainer .fastCartTop .actionLink a a {
-        text-decoration: none; }
   #ModalContainer .fastCartBottom {
     display: none; }
   #ModalContainer a.modalClose {
-    vertical-align: middle;
-    display: inline-block;
+    background-color: #691d00;
     border-radius: 5px;
+    padding: 10px;
     margin: 10px 0;
-    padding: 10px 5px;
-    text-transform: uppercase;
-    font-size: 13px;
-    border: none;
-    -webkit-appearance: none;
+    font-size: 14px;
+    color: white;
+    width: 100%;
     display: block;
     width: 100% !important;
     text-align: center !important; }
-    #ModalContainer a.modalClose a {
-      text-decoration: none; }
 
 [data-ur-toggler-component="content"] {
   display: none; }
@@ -996,3 +981,101 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-top: 15px; }
   .mw-footer .mw_logo {
     margin: 5px auto; }
+
+body._category #Wrapper .Left {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; }
+  body._category #Wrapper .Left #SideShopByBrand h2, body._category #Wrapper .Left #SideCategoryShopByPrice h2 {
+    background-color: #691d00;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: white;
+    width: 100%;
+    margin: 10px 0 0;
+    padding: 15px; }
+    body._category #Wrapper .Left #SideShopByBrand h2[data-ur-state="enabled"], body._category #Wrapper .Left #SideCategoryShopByPrice h2[data-ur-state="enabled"] {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0; }
+      body._category #Wrapper .Left #SideShopByBrand h2[data-ur-state="enabled"] > .mw_indicator, body._category #Wrapper .Left #SideCategoryShopByPrice h2[data-ur-state="enabled"] > .mw_indicator {
+        float: right; }
+    body._category #Wrapper .Left #SideShopByBrand h2 > .mw_indicator, body._category #Wrapper .Left #SideCategoryShopByPrice h2 > .mw_indicator {
+      float: right; }
+  body._category #Wrapper .Left #SideShopByBrand div ul, body._category #Wrapper .Left #SideCategoryShopByPrice div ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    body._category #Wrapper .Left #SideShopByBrand div ul li, body._category #Wrapper .Left #SideCategoryShopByPrice div ul li {
+      position: relative;
+      margin: 0;
+      padding: 0; }
+      body._category #Wrapper .Left #SideShopByBrand div ul li a, body._category #Wrapper .Left #SideCategoryShopByPrice div ul li a {
+        width: 100%;
+        display: block;
+        padding: 10px 12px;
+        border: 1px solid #691d00;
+        background-color: #f3efd8;
+        border-bottom: 0;
+        color: black; }
+        body._category #Wrapper .Left #SideShopByBrand div ul li a .mw_arrow, body._category #Wrapper .Left #SideCategoryShopByPrice div ul li a .mw_arrow {
+          background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -706px;
+          width: 9px;
+          height: 13px;
+          float: right; }
+      body._category #Wrapper .Left #SideShopByBrand div ul li:last-of-type a, body._category #Wrapper .Left #SideCategoryShopByPrice div ul li:last-of-type a {
+        border-bottom: 1px solid #691d00;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px; }
+
+body._category #Wrapper .Content #CategoryHeading {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; }
+  body._category #Wrapper .Content #CategoryHeading form {
+    background-color: #691d00;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: white; }
+    body._category #Wrapper .Content #CategoryHeading form > * {
+      display: inline-block; }
+    body._category #Wrapper .Content #CategoryHeading form span {
+      width: 25%; }
+    body._category #Wrapper .Content #CategoryHeading form select {
+      width: 75%;
+      height: 20px;
+      margin-bottom: 0; }
+
+body._category #Wrapper .Content #CategoryContent {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; }
+  body._category #Wrapper .Content #CategoryContent ul.ProductList {
+    list-style-type: none;
+    padding-left: 0; }
+    body._category #Wrapper .Content #CategoryContent ul.ProductList li {
+      background-color: #ececec;
+      margin: 5px 0;
+      display: flex;
+      align-items: stretch; }
+      body._category #Wrapper .Content #CategoryContent ul.ProductList li .ProductImage {
+        padding: 5px;
+        margin: auto 0; }
+        body._category #Wrapper .Content #CategoryContent ul.ProductList li .ProductImage a {
+          margin: auto 0; }
+      body._category #Wrapper .Content #CategoryContent ul.ProductList li .ProductSummary {
+        padding: 15px 10px 10px 15px;
+        height: auto;
+        flex-grow: 1; }
+        body._category #Wrapper .Content #CategoryContent ul.ProductList li .ProductSummary .ProductDetails {
+          overflow: wrap; }
+          body._category #Wrapper .Content #CategoryContent ul.ProductList li .ProductSummary .ProductDetails a {
+            color: black;
+            font-size: 12px; }
+        body._category #Wrapper .Content #CategoryContent ul.ProductList li .ProductSummary .ProductPriceRating em {
+          color: red;
+          width: 100%;
+          display: block;
+          font-style: normal;
+          font-size: 13px; }
+        body._category #Wrapper .Content #CategoryContent ul.ProductList li .ProductSummary .ProductActionAdd {
+          height: auto;
+          padding: 0; }

@@ -13,8 +13,8 @@
 
 (function(){
 
-var mapProxyToOrigin = {"http://mlocal.igadgetcommerce.com":"http://www.igadgetcommerce.com","https://mlocal.igadgetcommerce.com":"https://www.igadgetcommerce.com"};
-var mapOriginToProxy = {"http://igadgetcommerce.com":"http://mlocal.igadgetcommerce.com","http://www.igadgetcommerce.com":"http://mlocal.igadgetcommerce.com","https://igadgetcommerce.com":"https://mlocal.igadgetcommerce.com","https://www.igadgetcommerce.com":"https://mlocal.igadgetcommerce.com"};
+var mapProxyToOrigin = {"http://mlocal.igadgetcommerce.com":"http://www.igadgetcommerce.com","http://survey.igadgetcommerce.com":"http://www.anymeme.org","https://mlocal.igadgetcommerce.com":"https://www.igadgetcommerce.com","https://survey.igadgetcommerce.com":"https://www.anymeme.org"};
+var mapOriginToProxy = {"http://igadgetcommerce.com":"http://mlocal.igadgetcommerce.com","http://www.anymeme.org":"http://survey.igadgetcommerce.com","http://www.igadgetcommerce.com":"http://mlocal.igadgetcommerce.com","https://igadgetcommerce.com":"https://mlocal.igadgetcommerce.com","https://www.anymeme.org":"https://survey.igadgetcommerce.com","https://www.igadgetcommerce.com":"https://mlocal.igadgetcommerce.com"};
 
 if (typeof(mw) == "undefined") {
 	window.mw = {};
